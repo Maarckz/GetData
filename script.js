@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(data => {
                 const processedData = processData(data);
                 saveDataOnServer(processedData);
-                captureCameraPhoto();
             })
             .catch(error => console.error(error));
     }
